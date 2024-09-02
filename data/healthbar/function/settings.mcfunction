@@ -1,5 +1,0 @@
-execute if data storage healthbar settings{damageDisplay:1b} run tellraw @a [{"text":"\n-= Current Settings =-","color":"aqua"},{"text":"\nDamage Indicator: ","color":"white","clickEvent":{"action":"run_command","value":"/data remove storage healthbar settings.damageDisplay"}},{"text":"On","color":"green","clickEvent":{"action":"run_command","value":"/data remove storage healthbar settings.damageDisplay"}}]
-
-execute unless data storage healthbar settings{damageDisplay:1b} run tellraw @a [{"text":"\n\n-= Current Settings =-","color":"aqua"},{"text":"\nDamage Indicator: ","color":"white","clickEvent":{"action":"run_command","value":"/data modify storage healthbar settings.damageDisplay set value 1b"}},{"text":"Off","color":"red","clickEvent":{"action":"run_command","value":"/data modify storage healthbar settings.damageDisplay set value 1b"}}]
-
-tellraw @a {"text":"\nClick to toggle each setting","color":"gray"}

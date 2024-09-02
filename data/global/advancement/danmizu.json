@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:player_head",
+			"components": {
+				"minecraft:profile": {
+					"name": "DanMizu"
+				}
+			}
+		},
+		"title": "DanMizu",
+		"description": "",
+		"background": "minecraft:textures/block/black_concrete_powder.png",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"parent": "global:root",
+	"criteria": {
+		"trigger": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
