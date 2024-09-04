@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 79584390,
+    "separation": 44,
+    "spacing": 60,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "nova_structures:end_ship",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "description": {
+    "translate": "Wither Coated"
+  },
+  "exclusive_set": "#nova_structures:exclusive_set/sword_effect",
+  "supported_items": "#minecraft:enchantable/sharp_weapon",
+  "primary_items": "#minecraft:swords",
+  "weight": 2,
+  "max_level": 1,
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 6
+  },
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 6
+  },
+  "anvil_cost": 5,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:wither",
+          "min_duration": 4,
+          "max_duration": 6,
+          "min_amplifier": 2,
+          "max_amplifier": 2
+        },
+        "requirements": {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "attacker",
+            "predicate": {
+              "type": "minecraft:wither_skeleton"
+            }
+          }
+        }
+      }
+    ],
+    "minecraft:item_damage": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 1
+        }
+      }
+    ]
+  }
+}

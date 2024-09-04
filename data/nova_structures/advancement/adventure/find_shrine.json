@@ -1,0 +1,43 @@
+{
+    "parent": "minecraft:adventure_root",
+    "criteria": {
+        "shrine_combat": {
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "location": {
+                                "structures": "#nova_structures:shrine"
+                            }
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:location"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "translate": "Enter a shrine"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+			"count": 1,
+            "id": "minecraft:polished_deepslate"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "A Major Trial Of Strengh"
+        }
+    },
+    "requirements": [
+        [
+            "shrine_combat"
+        ]
+    ],
+    "sends_telemetry_event": false
+}

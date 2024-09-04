@@ -1,0 +1,29 @@
+{
+    "parent": "nova_structures:adventure/find_tavern",
+    "criteria": {
+        "open_tavern_chest": {
+            "trigger": "minecraft:player_generates_container_loot",
+            "conditions": {
+                "loot_table": "nova_structures:chests/tavern_quest"
+            }
+        }
+    },
+    "display": {
+        "icon": {
+			"count": 1,
+            "id": "minecraft:map"
+        },
+        "title": "Call For Adventure",
+        "description": "Acquire a Tavern quest map",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "requirements": [
+        [
+            "open_tavern_chest"
+        ]
+    ],
+    "sends_telemetry_event": false
+}
