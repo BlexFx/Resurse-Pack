@@ -1,1 +1,1 @@
-this is my resurce-pack for minecraft server
+this is my resurce-pack for my minecraft server
